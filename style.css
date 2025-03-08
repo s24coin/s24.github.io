@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #111;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.telegram-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('samsung-s24-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Immagine nella Hero Section */
+.hero-image {
+    max-width: 100%; /* Assicura che l'immagine non esca dai bordi */
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Bottone Telegram */
+.btn-telegram {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0088cc; /* Colore di sfondo Telegram */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.btn-telegram:hover {
+    background-color: #006c9d; /* Colore al passaggio del mouse */
+}
+
+/* Icona Telegram nel bottone */
+.telegram-btn-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Spazio tra l'icona e il testo */
+}
+
+/* Why Us Section */
+.why-us {
+    color:white;
+    background-color: rgb(136, 20, 165);
+    padding: 60px 20px;
+}
+
+.feature-box {
+    background-color: plum;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+    color:white;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    position: fixed; /* Fissa il footer in fondo alla pagina */
+    bottom: 0; /* Posiziona il footer sul fondo */
+    width: 100%; /* Larghezza completa */
+    text-align: center; /* Allinea il testo al centro */
+    padding: 10px 0; /* Aggiunge un po' di spazio dentro il footer */
+}
