@@ -3,7 +3,6 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #181a1b;
 }
 
 /* Header */
@@ -23,11 +22,9 @@ header .logo {
 
 /* Hero Section */
 .hero {
-    background: url('samsung-s24-bg.jpg') no-repeat center center;
-    background-size: cover;
+    background-color: #181a1b; /* Colore di sfondo */
     color: white;
     padding: 80px 20px;
-    text-align: center;
 }
 
 .hero h2 {
@@ -40,40 +37,15 @@ header .logo {
     margin-top: 20px;
 }
 
-/* Immagine nella Hero Section */
-.hero-image {
-    max-width: 100%; /* Assicura che l'immagine non esca dai bordi */
-    height: auto;
-    margin: 20px 0;
-}
-
-/* Bottone Telegram */
-.btn-telegram {
-    display: inline-flex;
-    align-items: center;
-    background-color: #0088cc; /* Colore di sfondo Telegram */
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: background-color 0.3s;
-}
-
-.btn-telegram:hover {
-    background-color: #006c9d; /* Colore al passaggio del mouse */
-}
-
-/* Icona Telegram nel bottone */
-.telegram-btn-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px; /* Spazio tra l'icona e il testo */
+/* Animazioni */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Why Us Section */
 .why-us {
-    color:white;
+    color: white;
     background-color: rgb(136, 20, 165);
     padding: 60px 20px;
 }
@@ -85,11 +57,17 @@ header .logo {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     transition: transform 0.3s ease-in-out;
-    color:white;
+    color: white;
 }
 
 .feature-box:hover {
     transform: translateY(-10px);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
 }
 
 /* Footer */
